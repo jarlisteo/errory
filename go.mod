@@ -1,3 +1,3 @@
-module github.com/Jarlisteo/errory
+module github.com/jarlisteo/errory
 
 go 1.18
