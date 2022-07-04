@@ -1,4 +1,4 @@
-package Errory
+package errory
 
 import (
 	"strings"
