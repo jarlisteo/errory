@@ -66,6 +66,9 @@ func manageMultipleErrors(message string, messages []string) string {
 }
 
 func GetErrorCode(e error) int {
-	err := e.(Err)
+	err, ok := e.(Err)
+	if !ok {
+		return 500
+	}
 	return err.Code
 }
